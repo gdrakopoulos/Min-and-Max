@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class MinAndMax {
+  public static void main(String[]args) {
+  System.out.println("Give the first number");
+  Scanner input= new Scanner(System.in);
+  int a=input.nextInt();
+  System.out.println("Give the second number");
+  int b=input.nextInt();
+  System.out.println("Give the third number");
+  int c=input.nextInt();
+  int max=a;
+  int min=a;
+  if (b> max) {
+    max= b;
+  }
+  if (c> max) {
+    max= c;
+  }
+  if (b< min) {
+    min= b;
+  }
+  if (c< min) {
+    min= c;
+  }
+ System.out.println("The maximum is" +max);
+ System.out.println("The minimum is" +min);
+ }
+}
